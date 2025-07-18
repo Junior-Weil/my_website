@@ -3,7 +3,7 @@ import GradientBackground from '../components/GradientBackground';
 
 const Gradient = () => {
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen relative overflow-hidden">
       <GradientBackground >
          <p>Interactive Gradient Background</p>
       </GradientBackground>
