@@ -5,14 +5,6 @@ import FlipCard from '../components/FlipCard';
 const Home = () => (
   <div className="p-8 bg-white">
     <h1 className="text-3xl font-bold">Home</h1>
-    {/* <p>Welcome to my website!</p>
-    <FlipCard
-      frontContent={<div className="bg-blue-500 text-white p-4">Front Side</div>}
-      backContent={<div className="bg-green-500 text-white p-4">Back Side</div>}
-      className="mt-8"
-      onClick={() => console.log('Card flipped!')}
-    />
-    <p className="mt-4">This is a simple flip card component.</p> */}
     <div className="p-8 bg-slate-100 min-h-screen flex items-center justify-center">
       <FlipCard
         frontContent={
