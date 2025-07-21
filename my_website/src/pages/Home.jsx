@@ -1,37 +1,23 @@
 import React from 'react';
 import FlipCard from '../components/FlipCard';
+import GradientMarqueeText from "../components/AnimatedGradientText";
+import Grid from '../components/Grid';
+import TestimonialsGrid from '../components/Grid';
 
-// src/pages/Home.jsx
-const Home = () => (
-  <div className="p-8 bg-white">
-    <h1 className="text-3xl font-bold">Home</h1>
-    <div className="p-8 bg-slate-100 min-h-screen flex items-center justify-center">
-      <FlipCard
-        frontContent={
-          <div className=" bg-white rounded-lg shadow-lg p-4 flex flex-col items-center justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
-              alt="Product"
-              className="w-48 h-48 object-contain mb-4"
-            />
-            <h2 className="text-xl font-bold">Nike Shoes</h2>
-            <p className="text-gray-600">$199.99</p>
-          </div>
-        }
-        backContent={
-          <div className="w-full h-full bg-white rounded-lg shadow-lg p-4 flex flex-col items-center justify-center">
-            <h3 className="text-lg font-semibold mb-2">Product Details</h3>
-            <p className="text-gray-600 text-center mb-4">
-              Premium comfort with innovative design. Perfect for both casual
-              wear and sports activities.
-            </p>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
-              Add to Cart
-            </button>
-          </div>
-        }
-      />
+
+const Home = () => {
+  const handleCardClick = () => {
+    window.open(
+      'https://docs.google.com/document/d/1R62fZxs_eFVezG9opYTs5jEd1oRQatV5bLbR9Gc6CI4/preview',
+      '_blank'
+    );
+  };
+
+  return (
+    <div className="p-10 bg-white w-full min-h-screen overflow-hidden flex-col items-center justify-center">
+      <TestimonialsGrid />
     </div>
-  </div>
-);
+  );
+};
+
 export default Home;
