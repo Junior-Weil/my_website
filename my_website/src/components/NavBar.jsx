@@ -2,14 +2,29 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function NavItem({ text, to }) {
-  return (
-    <Link
-      to={to}
+  const isExternal = to.startsWith("http") || to.startsWith("mailto:");
+
+  if (isExternal) {
+    return (
+      <a
+      href={to}
+      target={"_blank"}
+      rel="nooperner noreferrer"
       className="justify-center py-2 cursor-pointer hover:text-blue-600 transition-colors"
-    >
-      {text}
-    </Link>
-  );
+      >
+        {text}
+      </a>
+    );
+  }
+
+    return (
+      <Link
+        to={to}
+        className="justify-center py-2 cursor-pointer hover:text-blue-600 transition-colors"
+      >
+        {text}
+      </Link>
+    );
 }
 
 function HarmonyNav({ downloadVisible = false }) {
@@ -20,6 +35,7 @@ function HarmonyNav({ downloadVisible = false }) {
   const [profileNavItems, setProfileNavItems] = useState([
     { text: "GitHub", to: "https://github.com/Junior-Weil" },
     { text: "LinkedIn", to: "https://www.linkedin.com/in/ronald-weil-9561a6251" },
+    { text: "email", to: "mailto:rmw020@bucknell.edu" }
     // { text: "Resume", to: "https://junior-weil.github.io/Resume/" },
   ]);
   // const [isVisible, setIsVisible] = useState(true);
