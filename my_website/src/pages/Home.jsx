@@ -70,7 +70,7 @@ const Home = () => {
         <div className="mt-10">
           <h3 className="font-semibold text-gray-900 mb-2">Outside of Tech</h3>
           <p className="text-lg">
-            When I’m not coding, you can find me exploring new hiking trails, gaming, reading about
+            When I’m not coding, you can find me exploring new bouldering, gaming, reading about
             physics or tech trends, or brainstorming my next side project.
           </p>
         </div>

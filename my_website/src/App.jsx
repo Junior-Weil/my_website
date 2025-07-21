@@ -4,6 +4,7 @@ import Gradient from './pages/Gradient';
 import HarmonyNav from './components/NavBar';
 import './App.css'
 import ProjectGallery from './pages/ProjectGallery';
+import Resume from './pages/Resume';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectGallery />} />
           <Route path="/gradient" element={<Gradient />} />
+          <Route path="/Resume" element={<Resume />} />
         </Routes>
       </Router>
     </div>
