@@ -36,7 +36,7 @@ function HarmonyNav({ downloadVisible = false }) {
   const [profileNavItems, setProfileNavItems] = useState([
     { text: "GitHub", to: "https://github.com/Junior-Weil" },
     { text: "LinkedIn", to: "https://www.linkedin.com/in/ronald-weil-9561a6251" },
-    { text: "email", to: "mailto:rmw020@bucknell.edu" }
+    { text: "Email", to: "mailto:rmw020@bucknell.edu" }
     // { text: "Resume", to: "https://junior-weil.github.io/Resume/" },
   ]);
   // const [isVisible, setIsVisible] = useState(true);
@@ -70,7 +70,7 @@ function HarmonyNav({ downloadVisible = false }) {
               JW
             </div>
           </div>
-          <div className="my-auto uppercase font-bold text-lg text-zinc-950">
+          <div className="my-auto font-bold text-lg text-zinc-950">
             <nav className="flex sm:flex-row flex-col gap-5 justify-center items-center self-stretch my-auto text-base text-center text-neutral-900 font-light w-full sm:w-auto">
               {profileNavItems.map((item, index) => (
                 <NavItem key={index} text={item.text} to={item.to} />
