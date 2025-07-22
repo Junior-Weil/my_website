@@ -5,6 +5,7 @@ import HarmonyNav from './components/NavBar';
 import './App.css'
 import ProjectGallery from './pages/ProjectGallery';
 import Resume from './pages/Resume';
+import Kaggle from './pages/KaggleResults'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/projects" element={<ProjectGallery />} />
           <Route path="/gradient" element={<Gradient />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/kaggle" element={<Kaggle />} />
         </Routes>
       </Router>
     </div>
