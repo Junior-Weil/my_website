@@ -1,7 +1,7 @@
 import React from 'react';
 import GradientMarqueeText from '../components/AnimatedGradientText';
 
-const Resume = () => {
+const resume = () => {
   return (
     <div className="w-screen justify-center">
       <div className="p-10 w-3/4 min-h-screen bg-white flex flex-col items-center justify-center">
@@ -27,4 +27,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default resume;

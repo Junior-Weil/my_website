@@ -17,7 +17,7 @@ export default function TestimonialsGrid() {
     <section className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="flex flex-grid items-center justify-center overflow-x-auto">
-          <GradientMarqueeText className="text-gray-800 text-3xl font-semibold sm:text-4xl" text="Projects"/>
+          <GradientMarqueeText className="text-gray-800 text-3xl font-semibold sm:text-4xl" gradientColors={["#1F1C2C", "#928DAB", "#1F1C2C"]} text="Projects"/>
         </div>
 
         <div className="mt-12">
