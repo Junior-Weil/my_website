@@ -3,24 +3,26 @@ import GradientMarqueeText from '../components/AnimatedGradientText';
 
 const Resume = () => {
   return (
-    <div className="p-10 w-screen min-h-screen bg-white flex flex-col items-center justify-start">
-      <GradientMarqueeText
+    <div className="w-screen justify-center">
+      <div className="p-10 w-3/4 min-h-screen bg-white flex flex-col items-center justify-center">
+        <GradientMarqueeText
           text="My Resume"
           gradientColors={["#1F1C2C", "#928DAB", "#1F1C2C"]}
           className="text-5xl font-extrabold tracking-tight"
         />
-      <iframe
-        src="/../public/Resume.pdf"
-        title="Resume PDF"
-        className="w-full max-w-5xl h-[90vh] border rounded-lg shadow-lg"
-      />
-      <a
-        href="/../public/Resume.pdf"
-        download
-        className="mt-6 text-blue-600 hover:underline text-lg"
-      >
-        Download PDF
-      </a>
+        <iframe
+          src="/../public/Resume.pdf"
+          title="Resume PDF"
+          className="w-full max-w-5xl h-[90vh] border rounded-lg shadow-lg"
+        />
+        <a
+          href="/../public/Resume.pdf"
+          download
+          className="mt-6 text-blue-600 hover:underline text-lg"
+        >
+          Download PDF
+        </a>
+      </div>
     </div>
   );
 };
