@@ -11,6 +11,13 @@ export default function TestimonialsGrid() {
       docLinkButtonText: "View Document",
       docLinkText: null,
     },
+    {
+      image: "/../public/kaggleImages/AUC.png",
+      title: "Kaggle Home Credit",
+      docLink: "",
+      docLinkButtonText: "View Figures",
+      docLinkText: "",
+    },
   ];
 
   return (
