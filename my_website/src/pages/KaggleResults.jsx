@@ -12,7 +12,7 @@ const Kaggle = () => {
         />
       </div>
 
-      <div className="max-w-3xl text-center text-gray-800">
+      <div className="max-w-3xl text-center text-gray-800 items-center justify-center">
         <h2 className="text-4xl">
           Problem Statement
         </h2>
@@ -52,6 +52,8 @@ const Kaggle = () => {
         <h2 className="text-4xl">
           Feature Importance Analysis (SHAP values):
         </h2>
+        <img src="/../public/kaggleImages/Shap_Bar.png" className="gap-y-10" />
+        <img src="/../public/kaggleImages/Shap_Features.png" className="gap-y-10" />
         <p>
           Our SHAP analysis revealed key features influencing loan defaults:
         </p>
@@ -88,8 +90,7 @@ const Kaggle = () => {
         <h2 className="text-4xl">
           Class Imbalance Handling:
         </h2>
-        <img src="/../public/kaggleImages/Shap_Bar.png" className="gap-y-10" />
-        <img src="/../public/kaggleImages/Shap_Features.png" className="gap-y-10" />
+        <img src="/../public/kaggleImages/pos_neg_ration.png" className="gap-y-10" />
         <p>
           Our dataset exhibited a significant class imbalance (~96.86% non-default, 3.14% default). Effective strategies were implemented to manage this imbalance, resulting in robust model performance despite skewed class distribution.
         </p>
