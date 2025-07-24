@@ -11,7 +11,7 @@ const imageClass =
 
 const Kaggle = () => {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 flex flex-col items-center py-12 px-4">
+    <div className="min-h-screen w-full bg-slate-200 from-gray-100 via-gray-200 to-gray-300 flex flex-col items-center py-12 px-4">
       <div className="flex flex-row items-center justify-center mb-12 w-full">
         <GradientMarqueeText
           text="Kaggle Competition: Predicting Client Loan Default Risk"
