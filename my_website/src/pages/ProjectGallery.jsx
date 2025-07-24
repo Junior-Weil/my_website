@@ -13,7 +13,7 @@ const ProjectGallery = () => {
   };
 
   return (
-    <div className="p-10 bg-white w-full min-h-screen overflow-hidden flex-col items-center justify-center">
+    <div className="p-10 bg-white w-full min-h-screen overflow-hidden flex-col items-center justify-center rounded">
       <TestimonialsGrid />
     </div>
   );
