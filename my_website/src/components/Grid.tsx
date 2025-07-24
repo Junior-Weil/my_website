@@ -28,7 +28,7 @@ export default function TestimonialsGrid() {
         </div>
 
         <div className="mt-12">
-          <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid gap-10 grid-cols-2">
             {testimonials.map((item, idx) => (
               <li key={idx}>
                 <FlipCard
