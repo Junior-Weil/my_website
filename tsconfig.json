@@ -116,5 +116,4 @@
     "isolatedModules": true,     // Required for Vite with TypeScript
     "noEmit": true               // Vite doesn't need emitted JS files
   },
-  "include": ["src"]
 }

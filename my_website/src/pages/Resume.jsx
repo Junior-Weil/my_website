@@ -8,7 +8,7 @@ const resume = () => {
         <GradientMarqueeText
           text="My Resume"
           gradientColors={["#1F1C2C", "#928DAB", "#1F1C2C"]}
-          className="text-5xl font-extrabold tracking-tight"
+          className="text-5xl font-extrabold tracking-tight p-10"
         />
         <iframe
           src="/../public/Resume.pdf"
