@@ -5,16 +5,16 @@ import GradientMarqueeText from "./AnimatedGradientText";
 export default function TestimonialsGrid() {
   const testimonials = [
     {
-      image: "/DataDriveVehicle.jpg",
+      image: `${import.meta.env.TS_BASE_URL}/DataDriveVehicle.jpg`,
       title: "Data Drive Vehicle",
       docLink: "https://docs.google.com/document/d/1R62fZxs_eFVezG9opYTs5jEd1oRQatV5bLbR9Gc6CI4/edit?tab=t.0",
       docLinkButtonText: "View Document",
       docLinkText: null,
     },
     {
-      image: "/kaggleImages/AUC.png",
+      image: `${import.meta.env.TS_BASE_URL}/kaggleImages/AUC.png`,
       title: "Kaggle Home Credit",
-      docLink: "/kaggle",
+      docLink: `${import.meta.env.TS_BASE_URL}/kaggle`,
       docLinkButtonText: "View Figures",
       docLinkText: "",
     },

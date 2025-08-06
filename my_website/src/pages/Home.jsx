@@ -12,7 +12,7 @@ const Home = () => {
           className="text-5xl font-extrabold tracking-tight"
         />
         <img
-          src={"${import.meta.env.BASE_URL}/SelfPortrait.jpeg"}
+          src={`${import.meta.env.BASE_URL}/SelfPortrait.jpeg`}
           alt="Self Portrait"
           className="rounded-full w-28 h-28 ml-6 shadow-lg object-cover border-4 border-gray-200"
         />
