@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import GradientMarqueeText from '../components/AnimatedGradientText';
+import {OrbitProgress} from 'react-loading-indicators';
 
 const resume = () => {
   return (
@@ -10,11 +11,15 @@ const resume = () => {
           gradientColors={["#1F1C2C", "#928DAB", "#1F1C2C"]}
           className="text-5xl font-extrabold tracking-tight p-10"
         />
-        <iframe
-          src={`${import.meta.env.BASE_URL}/Resume.pdf`}
-          title="Resume PDF"
-          className="w-full max-w-5xl h-[90vh] border rounded-lg shadow-lg"
-        />
+        <Suspense
+        fallback={<OrbitProgress variant="disc" color="#a9a9a9" size="medium" />}
+        >
+          <iframe
+            src={`${import.meta.env.BASE_URL}/Resume.pdf`}
+            title="Resume PDF"
+            className="w-full max-w-5xl h-[90vh] border rounded-lg shadow-lg"
+          />
+        </Suspense>
         <a
           href={`${import.meta.env.BASE_URL}/Resume.pdf`}
           download
