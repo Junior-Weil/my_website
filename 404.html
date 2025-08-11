@@ -1,4 +1,24 @@
-<script>
-  const redirectTo = location.pathname.replace('/my_website', '');
-  location.replace('/my_website/' + redirectTo);
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <script>
+      // SPA GitHub Pages redirect (handles deep links without doubling slashes)
+      (function(l) {
+        var path = l.pathname.replace(/\/+$/, ''); // trim trailing slash
+        var repoBase = '/my_website'; 
+        if (!path.startsWith(repoBase)) { repoBase = ''; } // custom domain case
+
+        var newUrl = repoBase + '/index.html' + l.search + l.hash;
+        // Preserve the path in the query so the SPA can read it if needed
+        // Many setups don't need this; if yours doesn't, you can drop '?p=' logic.
+        if (!l.search) {
+          newUrl = repoBase + '/index.html?p=' + encodeURIComponent(l.pathname) + l.hash;
+        }
+        l.replace(newUrl.replace(/\/+/g, '/')); // collapse duplicate slashes
+      })(window.location);
+    </script>
+  </head>
+  <body>Redirecting…</body>
+</html>
