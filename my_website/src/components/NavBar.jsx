@@ -37,9 +37,7 @@ function HarmonyNav({ downloadVisible = false }) {
     { text: "GitHub", to: "https://github.com/Junior-Weil" },
     { text: "LinkedIn", to: "https://www.linkedin.com/in/ronald-weil-9561a6251" },
     { text: "Email", to: "mailto:rmw020@bucknell.edu" }
-    // { text: "Resume", to: "https://junior-weil.github.io/Resume/" },
   ]);
-  // const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     // Fetch navigation items from backend

@@ -14,7 +14,7 @@ export default function TestimonialsGrid() {
     {
       image: `${import.meta.env.TS_BASE_URL}/kaggleImages/AUC.png`,
       title: "Kaggle Home Credit",
-      docLink: `${import.meta.env.TS_BASE_URL}/kaggle`,
+      docLink: "/kaggle",
       docLinkButtonText: "View Figures",
       docLinkText: "",
     },
