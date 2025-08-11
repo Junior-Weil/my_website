@@ -6,6 +6,6 @@ export default defineConfig({
   base: '/my_website/',
 
   define: {
-    'import.meta.env.TS_BASE_URL': JSON.stringify('/my_website'),
+    'import.meta.env.TS_BASE_URL': JSON.stringify('/my_website/'),
   },
 });
