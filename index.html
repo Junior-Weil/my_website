@@ -2,41 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <!-- CSP: allow data: fonts so your inline WOFF2s load -->
-    <meta http-equiv="Content-Security-Policy"
-      content="
-        default-src 'self';
-        script-src 'self';
-        style-src 'self' 'unsafe-inline';
-        img-src 'self' data: https:;
-        font-src 'self' data:;
-        connect-src 'self';
-        object-src 'none';
-        base-uri 'self';
-        frame-ancestors 'none';
-      ">
-
-    <!-- One-time SPA deep-link restore -->
-    <script>
-      (function () {
-        var params = new URLSearchParams(window.location.search);
-        var p = params.get('p');
-        if (!p) return;
-        var repoBase = '/my_website'; // no trailing slash
-        var decoded = '/' + decodeURIComponent(p).replace(/^\/+/, '');
-        var clean = (repoBase + decoded).replace(/\/{2,}/g, '/');
-        history.replaceState(null, '', clean);
-      })();
-    </script>
-
-    <link rel="icon" href="/my_website/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <script type="module" crossorigin src="/my_website/assets/index-DtD1xL3m.js"></script>
+    <title>Vite + React</title>
+    <script type="module" crossorigin src="/my_website/assets/index-BnWsQoQz.js"></script>
+    <link rel="stylesheet" crossorigin href="/my_website/assets/index-CtjYOv5f.css">
   </head>
   <body>
     <div id="root"></div>
-    <!-- JS entry for JSX projects -->
   </body>
 </html>
