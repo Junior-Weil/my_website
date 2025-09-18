@@ -25,6 +25,7 @@ function App() {
           <Route path="/projects" element={<ProjectGallery />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/kaggle" element={<Kaggle />} />
+          <Route path="*" element={<NotFound />} /> 
         </Routes>
       </Router>
     </div>
