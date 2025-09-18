@@ -15,13 +15,13 @@ const resume = () => {
         fallback={<OrbitProgress variant="disc" color="#a9a9a9" size="medium" />}
         >
           <iframe
-            src={`${import.meta.env.BASE_URL}/Resume.pdf`}
+            src={"/Resume.pdf"}
             title="Resume PDF"
             className="w-full max-w-5xl h-[90vh] border rounded-lg shadow-lg"
           />
         </Suspense>
         <a
-          href={`${import.meta.env.BASE_URL}/Resume.pdf`}
+          href={"/Resume.pdf"}
           download
           className="mt-6 text-blue-600 hover:underline text-lg"
         >

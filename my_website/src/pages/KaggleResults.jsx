@@ -39,19 +39,19 @@ const Kaggle = () => {
           <h4 className="text-xl font-semibold mb-2 text-gray-800">
             Model Performance Metrics:
           </h4>
-          <img src={`${import.meta.env.TS_BASE_URL}/kaggleImages/AUC.png`} alt="AUC Curve" className={imageClass} />
+          <img src={"/kaggleImages/AUC.png"} alt="AUC Curve" className={imageClass} />
           <ul className={listClass}>
             <li>
               <span className="font-semibold">AUC (Area Under Curve):</span> Achieved an impressive ~0.90 AUC, indicating excellent predictive capability.
             </li>
           </ul>
-          <img src={`${import.meta.env.TS_BASE_URL}/kaggleImages/Learning_Curve.png`} alt="Learning Curve" className={imageClass} />
+          <img src={"/kaggleImages/Learning_Curve.png"} alt="Learning Curve" className={imageClass} />
           <ul className={listClass}>
             <li>
               <span className="font-semibold">Log Loss:</span> Reduced effectively over iterations, converging to around 0.38, demonstrating robust probability calibration and confidence in predictions.
             </li>
           </ul>
-          <img src={`${import.meta.env.TS_BASE_URL}/kaggleImages/FPR-FNR.png`} alt="FPR-FNR Curve" className={imageClass} />
+          <img src={"/kaggleImages/FPR-FNR.png"} alt="FPR-FNR Curve" className={imageClass} />
           <ul className={listClass}>
             <li>
               <span className="font-semibold">FPR-FNR Curve:</span> The False Positive Rate (FPR) and False Negative Rate (FNR) curves demonstrated a balanced trade-off, enabling informed threshold adjustments to suit different operational requirements.
@@ -62,8 +62,8 @@ const Kaggle = () => {
 
       <div className={sectionClass}>
         <h2 className={headingClass}>Feature Importance Analysis (SHAP values)</h2>
-        <img src={`${import.meta.env.TS_BASE_URL}/kaggleImages/Shap_Bar.png`} alt="SHAP Bar" className={imageClass} />
-        <img src={`${import.meta.env.TS_BASE_URL}/kaggleImages/Shap_Features.png`} alt="SHAP Features" className={imageClass} />
+        <img src={"/kaggleImages/Shap_Bar.png"} alt="SHAP Bar" className={imageClass} />
+        <img src={"/kaggleImages/Shap_Features.png"} alt="SHAP Features" className={imageClass} />
         <p className={paragraphClass}>
           Our SHAP analysis revealed key features influencing loan defaults:
         </p>
@@ -76,7 +76,7 @@ const Kaggle = () => {
 
       <div className={sectionClass}>
         <h2 className={headingClass}>Confusion Matrix</h2>
-        <img src={`${import.meta.env.TS_BASE_URL}/kaggleImages/Confusion_Matrix.png`} alt="Confusion Matrix" className={imageClass} />
+        <img src={"/kaggleImages/Confusion_Matrix.png"} alt="Confusion Matrix" className={imageClass} />
         <ul className={listClass}>
           <li>True Positives: 176,366</li>
           <li>True Negatives: 167,341</li>
@@ -90,7 +90,7 @@ const Kaggle = () => {
 
       <div className={sectionClass}>
         <h2 className={headingClass}>Class Imbalance Handling</h2>
-        <img src={`${import.meta.env.TS_BASE_URL}/kaggleImages/pos_neg_ration.png`} alt="Class Imbalance" className={imageClass} />
+        <img src={"/kaggleImages/pos_neg_ration.png"} alt="Class Imbalance" className={imageClass} />
         <p className={paragraphClass}>
           Our dataset exhibited a significant class imbalance (~96.86% non-default, 3.14% default). Effective strategies were implemented to manage this imbalance, resulting in robust model performance despite skewed class distribution.
         </p>
