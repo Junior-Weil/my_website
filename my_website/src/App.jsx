@@ -6,6 +6,15 @@ import ProjectGallery from './pages/ProjectGallery';
 import Resume from './pages/Resume';
 import Kaggle from './pages/KaggleResults';
 
+function NotFound() {
+  return (
+    <main style={{ padding: '3rem', textAlign: 'center' }}>
+      <h1>Page not found</h1>
+      <p>Try the <a href="/">home page</a>.</p>
+    </main>
+  );
+}
+
 function App() {
   return (
     <div className="min-h-screen w-full bg-slate-100 pt-24">

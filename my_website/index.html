@@ -3,20 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script>
-      // — Handle redirect from 404.html for SPA routes —
-      (function() {
-        try {
-          var params = new URLSearchParams(window.location.search);
-          var redir = params.get("redirect");
-          if (redir && redir !== window.location.pathname) {
-            var newUrl = (window.location.origin + "/" + redir).replace(/\/+/, "/");
-            window.history.replaceState(null, "", newUrl);
-          }
-        } catch (e) { /* noop */ }
-      })();
-    </script>
-
   </head>
   <body>
     <div id="root"></div>
