@@ -1,19 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Redirecting…</title>
     <script>
-      (function () {
+      // — SPA GitHub Pages redirect —
+      (function() {
         var l = window.location;
-        var repoBase = '/my_website'; // no trailing slash
-        var path = l.pathname.replace(/\/+$/, '');
-        var internal = path.indexOf(repoBase) === 0 ? path.slice(repoBase.length) : path;
-        var payload = encodeURIComponent(internal + (l.search || '') + (l.hash || ''));
-        var dest = repoBase + '/index.html?p=' + payload;
-        l.replace(dest);
+        var repoBase = "/my_website";
+        // Only rewrite if we're under the repo path
+        var path = l.pathname.startsWith(repoBase) ? l.pathname.slice(repoBase.length) : l.pathname;
+        var search = l.search || "";
+        var hash = l.hash || "";
+        var url = repoBase + "/index.html?redirect=/" + path.replace(/^\//, "") + search + hash;
+        l.replace(url);
       })();
     </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/my_website/">
+    </noscript>
   </head>
-  <body>Redirecting…</body>
+  <body></body>
 </html>
