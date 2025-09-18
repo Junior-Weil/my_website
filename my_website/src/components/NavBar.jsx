@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 
 function NavItem({ text, to }) {
   const isExternal = to.startsWith("http") || to.startsWith("mailto:");
@@ -64,9 +64,9 @@ function HarmonyNav({ downloadVisible = false }) {
       <div className="flex gap-5 justify-between items-center py-1.5 px-6 rounded-3xl backdrop-blur-[17.5px] bg-opacity-80 w-full max-w-full flex-wrap sm:flex-nowrap sm:py-4 sm:px-10 bg-[#ffffffff]">
         <div className="flex gap-4 justify-between items-center py-1.5 my-auto w-full sm:w-auto">
           <div className="flex justify-center items-center px-0.5">
-            <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+            <Link className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold" to="/">
               JW
-            </div>
+            </Link>
           </div>
           <div className="my-auto font-bold text-lg text-zinc-950">
             <nav className="flex sm:flex-row flex-col gap-5 justify-center items-center self-stretch my-auto text-base text-center text-neutral-900 font-light w-full sm:w-auto">
