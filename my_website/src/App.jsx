@@ -5,15 +5,7 @@ import './App.css';
 import ProjectGallery from './pages/ProjectGallery';
 import Resume from './pages/Resume';
 import Kaggle from './pages/KaggleResults';
-
-function NotFound() {
-  return (
-    <main style={{ padding: '3rem', textAlign: 'center' }}>
-      <h1>Page not found</h1>
-      <p>Try the <a href="/">home page</a>.</p>
-    </main>
-  );
-}
+import NotFound from './pages/404';
 
 function App() {
   return (
@@ -25,7 +17,9 @@ function App() {
           <Route path="/projects" element={<ProjectGallery />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/kaggle" element={<Kaggle />} />
-          <Route path="*" element={<NotFound />} /> 
+
+
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
     </div>
