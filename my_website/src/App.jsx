@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectGallery />} />
-          <Route path="/gradient" element={<Gradient />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/kaggle" element={<Kaggle />} />
         </Routes>
