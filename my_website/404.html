@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <title>Redirecting…</title>
     <script>
-      // — SPA GitHub Pages redirect —
       (function() {
         var l = window.location;
-        var repoBase = "/my_website";
-        // Only rewrite if we're under the repo path
+        var repoBase = "/";
         var path = l.pathname.startsWith(repoBase) ? l.pathname.slice(repoBase.length) : l.pathname;
         var search = l.search || "";
         var hash = l.hash || "";
@@ -17,7 +15,7 @@
       })();
     </script>
     <noscript>
-      <meta http-equiv="refresh" content="0; url=/my_website/">
+      <meta http-equiv="refresh" content="0; url=/">
     </noscript>
   </head>
   <body></body>
