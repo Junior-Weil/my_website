@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Gradient from './pages/Gradient';
 import HarmonyNav from './components/NavBar';
 import './App.css';
 import ProjectGallery from './pages/ProjectGallery';
