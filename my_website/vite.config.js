@@ -1,12 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/my_website/',
-  build: { assetsInlineLimit: 0 },
-
+  base: '/',
   define: {
-    'import.meta.env.TS_BASE_URL': JSON.stringify('/my_website'),
+    'import.meta.env.TS_BASE_URL': JSON.stringify('/'),
   },
-});
+})

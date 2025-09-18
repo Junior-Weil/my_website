@@ -7,12 +7,10 @@ import ProjectGallery from './pages/ProjectGallery';
 import Resume from './pages/Resume';
 import Kaggle from './pages/KaggleResults';
 
-const basename = (import.meta.env.BASE_URL || '').replace(/\/$/, '')
-
 function App() {
   return (
     <div className="min-h-screen w-full bg-slate-100 pt-24">
-      <Router basename={basename}>
+      <Router >
         <HarmonyNav />
         <Routes>
           <Route path="/" element={<Home />} />
