@@ -48,7 +48,7 @@ export default function todo() {
       <div className="space-y-4 max-w-6xl items-center">
         <InputBox value={contentValue} onChange={setContentValue} />
         <FormGroup >
-          <FormControlLabel required control={<Switch checked={isDone} onChange={(_, checked) => setIsDone(checked)} />} label="Completed?"/>
+          <FormControlLabel required control={<Switch checked={isDone} onChange={(_, checked) => setIsDone(checked)} />} label="Completed?" />
         </FormGroup>
 
         <button onClick={createTodo} className="px-4 py-2 rounded bg-black text-white disabled:opacity-50" disabled={!contentValue.trim()}>
