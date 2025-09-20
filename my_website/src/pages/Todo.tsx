@@ -3,7 +3,7 @@ import "../amplify";
 import React, { useEffect, useMemo, useState } from 'react';
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
-import InputBox from "../components/inputbox";
+import InputBox from "../components/InputBox";
 
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
