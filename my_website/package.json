@@ -12,12 +12,18 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.2",
+    "@mui/styled-engine-sc": "^7.3.2",
     "aws-amplify": "^6.15.6",
     "framer-motion": "^12.23.6",
+    "mui": "^0.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-loading-indicators": "^1.0.1",
-    "react-router-dom": "^7.7.0"
+    "react-router-dom": "^7.7.0",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.16.1",

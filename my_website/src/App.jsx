@@ -6,6 +6,7 @@ import ProjectGallery from './pages/ProjectGallery';
 import Resume from './pages/Resume';
 import Kaggle from './pages/KaggleResults';
 import NotFound from './pages/404';
+import Todo from './pages/Todo';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/projects" element={<ProjectGallery />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/kaggle" element={<Kaggle />} />
+          <Route path="/todo" element={<Todo />} />
 
 
           <Route path="/*" element={<NotFound />} />
